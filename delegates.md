@@ -144,3 +144,17 @@ namespace Delegate
     }
 }
 ```
+
+## Delegates with Named and Anonymous Method
+A named method can be associated with a delegate. When you use a named method to instantiate a delegate, the method is passed as a parameter, for example.
+```csharp
+// Declare a delegate
+delegate void Delegate(int x);
+
+// Define a named method
+void method(int k) {/*...*/}
+
+// Instantiate the delegate using the method as a parameter
+Delegate d = obj.method;
+```
+This is accomplished using a named method
