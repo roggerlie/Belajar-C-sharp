@@ -8,7 +8,7 @@ Delegate berfungsi seperti pointer ke method, sehingga kita bisa memanggil metho
 
 ---
 
-## 📘 Penjelasan Singkat
+### 📘 Penjelasan Singkat
 
 - `Delegate1` adalah delegate yang menerima dua parameter `int`.
 - `Calculator` memiliki dua method: `Addition` dan `Subtraction`.
@@ -16,7 +16,7 @@ Delegate berfungsi seperti pointer ke method, sehingga kita bisa memanggil metho
 
 ---
 
-## 🧠 Kode Lengkap
+### 🧠 Kode Lengkap
 
 ```csharp
 using System;
