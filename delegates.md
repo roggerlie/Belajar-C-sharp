@@ -172,9 +172,55 @@ public delegate void display(int value);
 static void Main(string[] args)
 {
     display d1 = delegate(int v) {
-        Console.WriteLine("Inside Anonimus method.", v);
+        Console.WriteLine("Inside Anonimous method.", v);
     }
 
     d1(10);
 }
 ```
+
+Variables defined in an outer function can be accessed by anonymous methods.
+
+```csharp
+public delegate void display(int value);
+
+static void Main(string[] args)
+{
+
+    int i = 10;
+    display d1 = delegate(int v) {
+        v += i;
+        Console.WriteLine("Inside Anonimous method: {O}", v);
+    }
+
+    d1(10);
+}
+```
+
+A lambda expression is an anonymous method for creating delegates or expression tree types. In 2007, microsoft introduced lambda Expression in C# 3.0. Many developers frequently confuse anonymous methods with lambda expressions.
+
+```csharp
+{
+    namespace Delegate
+    {
+        public delegate void Delex(int number);
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Delex Del = new Delex(delegate {
+                    Console.WriteLine("This is the function");
+                });
+                Del(100);
+            }
+        }
+    }
+}
+```
+
+Limitation of an anonymous method
+- It cannot include any jump statements such as goto, break, continue.
+- It cannot access an outer method ref or out parameter.
+- It cannot contain or access dangerous code.
+- Ir cannot be used on the is operator left side.
