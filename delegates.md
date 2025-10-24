@@ -163,3 +163,18 @@ This is accomplished using a named method
 - In earlier versions of C#, named methods were the only way to instantiated a delegate.
 - However, if creating a new method is an unnecessary overhead, C# allows you to instantiate a delegate and immediately specify a code block that the delegate will process when called.
 - A lambda expression or an anonymous method can be included in the block.
+
+An anonymous method, as the name implies, is one that does not have a name. In C#, anonymous method can be defined with the delegate keyword and assigned to a variable of the delegate type.
+
+```csharp
+public delegate void display(int value);
+
+static void Main(string[] args)
+{
+    display d1 = delegate(int v) {
+        Console.WriteLine("Inside Anonimus method.", v);
+    }
+
+    d1(10);
+}
+```
