@@ -158,3 +158,8 @@ void method(int k) {/*...*/}
 Delegate d = obj.method;
 ```
 This is accomplished using a named method
+
+- Delegates build with a named can encapsulate either a static or an instance method.
+- In earlier versions of C#, named methods were the only way to instantiated a delegate.
+- However, if creating a new method is an unnecessary overhead, C# allows you to instantiate a delegate and immediately specify a code block that the delegate will process when called.
+- A lambda expression or an anonymous method can be included in the block.
