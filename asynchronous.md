@@ -21,4 +21,3 @@
 - When the asynchronous operation completes, the await operator returns the result.
 
 If there is no await operator in the async method, the method executes synchronously.
----
