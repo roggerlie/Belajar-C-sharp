@@ -3,6 +3,7 @@
 - Asynchronous programming is very popular in C# thanks to the async and await keywords.
 - When dealing with UI, we use long running method like reading a large file or something similiar.
 - If any synchronous process is blocked, the entire application is blocked, and our application stops responding until the task is completed.
+---
 
 ## Need of asynchronous programming
 - In synchronous programming, compilers run one statement and wait for it to complete and then move to next one
