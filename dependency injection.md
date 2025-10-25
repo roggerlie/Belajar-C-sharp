@@ -137,3 +137,9 @@ namespace propertyinjection
   }
 }
 ```
+
+## Conclusion
+- Dependency injection helps in reducing class coupling
+- Dependency injection increases the reusability of code
+- The dependency injection helps to improve code maintainability
+- Dependency injection makes it feasible to conduct unit testing
