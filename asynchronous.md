@@ -8,6 +8,7 @@
 ## Need of asynchronous programming
 - In synchronous programming, compilers run one statement and wait for it to complete and then move to next one
 - In asynchronous programming, compilers run one statement and while it gets completing, we will also work on the next one
+---
 
 ## Async and await keyword
 
@@ -20,3 +21,4 @@
 - When the asynchronous operation completes, the await operator returns the result.
 
 If there is no await operator in the async method, the method executes synchronously.
+---
