@@ -72,12 +72,12 @@ Struct
 Namespace are employed int the organization of large code projects. For example, in C#, the most common namespace is "System". We can create our namespaces and use one namespace within another, known as nested namespaces.
 The keyword "namespace" is used to identify them.
 
-# What is the "using" statement in C#
+## What is the "using" statement in C#
 - The "using" keyword indicates that the program uses the specified namespace.
 - As an example, consider system. The system is a namespace in this context.
 - The class console is defined in the system module. So, in our program, we can use a console. WriteLine("...") or ReadLine("...").
 
-# Explain Abstraction
+## Explain Abstraction
 One of the OOP concepts is an abstraction. It is used to display only the class essential features and hide unnecessary information.
 
 Let use a car as an example:
@@ -169,3 +169,7 @@ Unboxing Code | Unboxing is the explicit conversion of the same reference type b
 Example:
 //Unboxing
 int unboxing = int(boxingVal);
+
+## What is the difference between continue and break statement
+Break Statement | The break statement terminates the loop. It causes the programs control to exit the loop.
+Continue Statement | The continue statement instructs the programs control to exit only the current iteration. However, it does not affect on the loop.
